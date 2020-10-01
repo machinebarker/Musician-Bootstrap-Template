@@ -2,10 +2,32 @@ $font : 'Poppins',
 sans-serif;
 $logo : 'Epilogue',
 sans-serif;
+$font_3 : 'Finger Paint',
+cursive;
+$icon-dur : .5s;
 $void : #0E0B16;
 $fuschia : #A239CA;
 $jewel : #4717F6;
 $stark : #E7DFDD;
+
+@mixin inputs {
+    box-shadow: none;
+    border: 1px solid $void;
+    border-radius: 0px;
+}
+
+@mixin sign-forms {
+    .form-group {
+        a {
+            color: #000000;
+            text-decoration-color: #000;
+        }
+
+        .cus_input {
+            @include inputs;
+        }
+    }
+}
 
 * {
     margin: 0;
@@ -14,6 +36,9 @@ $stark : #E7DFDD;
 }
 
 .navbar {
+    background-color: rgba(0, 0, 0, .8);
+    transition: .4s;
+
     .navbar-brand {
         font-family: $logo;
         font-weight: 900;
@@ -34,6 +59,13 @@ $stark : #E7DFDD;
 
     .custom-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+#about {
+    span {
+        font-family: $logo;
+        font-weight: 700;
     }
 }
 
@@ -103,6 +135,215 @@ $stark : #E7DFDD;
     }
 }
 
+#event {
+    .jumbotron {
+        height: 75%;
+        background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+        background-size: cover;
+        background-attachment: fixed;
+        margin-bottom: 0px;
+    }
+
+    .tour-title {
+        font-size: 45px;
+        font-family: $font_3;
+        color: #fff;
+    }
+
+    .tour-date {
+        text-transform: uppercase;
+    }
+
+    a {
+        border-radius: 0px;
+    }
+}
+
+#contact {
+    .jumbotron {
+        background: transparent;
+    }
+
+    .icon {
+        font-size: 100px !important;
+    }
+
+    .fa-instagram:hover {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: $icon-dur;
+    }
+
+    .fa-facebook:hover {
+        color: #3b5998;
+        transition: $icon-dur;
+    }
+
+    .fa-twitter:hover {
+        color: #00acee;
+        transition: $icon-dur;
+    }
+
+    .fa-spotify:hover {
+        color: #1DB954;
+        transition: $icon-dur;
+    }
+
+    .fa-youtube:hover {
+        color: #FF0000;
+        transition: $icon-dur;
+    }
+
+    .fa-deezer:hover {
+        background: linear-gradient(45deg, #ff0000, #ffed00, #ff0092, #c2ff00, #00c7f2, #c1f1fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: $icon-dur;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    span {
+        font-family: $logo;
+        font-weight: 700;
+    }
+}
+
+#footer {
+    background-color: #000;
+    border-top: .3px solid gray;
+
+    p {
+        color: #fff;
+        padding-top: 18px;
+    }
+}
+
+// ! Preloader
+.preload {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s;
+    z-index: 9999;
+
+    .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fff;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+    .lds-ellipsis div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+    }
+
+    @keyframes lds-ellipsis1 {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes lds-ellipsis3 {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes lds-ellipsis2 {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(24px, 0);
+        }
+    }
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+// ! ---------
+
+#sign-in {
+    margin-top: 140px;
+
+    @include sign-forms;
+}
+
+#sign-up {
+    margin-top: 60px;
+
+    @include sign-forms;
+}
+
+.cus-button {
+    border: 1px solid $void;
+    border-radius: 0px;
+    transition: .3s ease-in-out;
+}
+
+.cus-button:hover {
+    background-color: $void;
+    color: #fff;
+    box-shadow: none;
+    transition: .3s ease-in;
+}
+
+.card {
+    border: 0.5px solid $void;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 5px 10px $void;
+}
+
 // Desktop Mode
 @media (min-width: 992px) {
     .navbar {
@@ -153,5 +394,28 @@ $stark : #E7DFDD;
         .photo-4 {
             height: 451px;
         }
+    }
+
+    #event {
+        .jumbotron {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+            background-size: cover;
+        }
+
+        .tour-title {
+            font-size: 80px;
+            font-family: 'Finger Paint', cursive;
+        }
+    }
+
+    #sign-in,
+    #sign-up {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
