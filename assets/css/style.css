@@ -4,6 +4,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 .navbar .navbar-brand {
   font-family: "Epilogue", sans-serif;
   font-weight: 900;
@@ -24,6 +30,11 @@
 
 .navbar .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#about span {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
 }
 
 .jumbo-hero {
@@ -96,6 +107,288 @@
   height: 300px;
 }
 
+#event .jumbotron {
+  height: 75%;
+  background-image: url("https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+
+#event .tour-title {
+  font-size: 45px;
+  font-family: "Finger Paint", cursive;
+  color: #fff;
+}
+
+#event .tour-date {
+  text-transform: uppercase;
+}
+
+#event a {
+  border-radius: 0px;
+}
+
+#contact .jumbotron {
+  background: transparent;
+}
+
+#contact .icon {
+  font-size: 100px !important;
+}
+
+#contact .fa-instagram:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .fa-facebook:hover {
+  color: #3b5998;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .fa-twitter:hover {
+  color: #00acee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .fa-spotify:hover {
+  color: #1DB954;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .fa-youtube:hover {
+  color: #FF0000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact .fa-deezer:hover {
+  background: linear-gradient(45deg, #ff0000, #ffed00, #ff0092, #c2ff00, #00c7f2, #c1f1fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact a {
+  color: black;
+  text-decoration: none;
+}
+
+#contact span {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+}
+
+#footer {
+  background-color: #000;
+  border-top: .3px solid gray;
+}
+
+#footer p {
+  color: #fff;
+  padding-top: 18px;
+}
+
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  z-index: 9999;
+}
+
+.preload .lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.preload .lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.preload .lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.preload .lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.preload .lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.preload .lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#sign-in {
+  margin-top: 140px;
+}
+
+#sign-in .form-group a {
+  color: #000000;
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
+}
+
+#sign-in .form-group .cus_input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #0E0B16;
+  border-radius: 0px;
+}
+
+#sign-up {
+  margin-top: 60px;
+}
+
+#sign-up .form-group a {
+  color: #000000;
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
+}
+
+#sign-up .form-group .cus_input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #0E0B16;
+  border-radius: 0px;
+}
+
+.cus-button {
+  border: 1px solid #0E0B16;
+  border-radius: 0px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.cus-button:hover {
+  background-color: #0E0B16;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.card {
+  border: 0.5px solid #0E0B16;
+  border-radius: 0px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 10px #0E0B16;
+          box-shadow: 5px 10px #0E0B16;
+}
+
 @media (min-width: 992px) {
   .navbar .nav-link {
     margin-left: 50px;
@@ -135,6 +428,24 @@
   }
   #galleries .photo-4 {
     height: 451px;
+  }
+  #event .jumbotron {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+  }
+  #event .tour-title {
+    font-size: 80px;
+    font-family: 'Finger Paint', cursive;
+  }
+  #sign-in,
+  #sign-up {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=style.css.map */

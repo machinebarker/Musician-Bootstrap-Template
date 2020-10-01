@@ -16,16 +16,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- GFonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;900&family=Poppins:wght@300;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;900&family=Finger+Paint&family=Poppins:wght@300;500&display=swap"
         rel="stylesheet">
 
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="assets/lightbox/css/lightbox.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 
     <title>Chelsea Doe</title>
 </head>
 
 <body class="main">
+    <div class="preload">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
@@ -37,13 +46,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Merch</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Sign In</a>
+                        <a href="signin.html" class="nav-link">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -58,10 +67,11 @@
         </div>
     </div>
     <!-- EndofJumbotron-Hero -->
+
     <!-- About -->
     <section id="about" class="mb-set">
         <div class="container">
-            <h2 class="text-center">About Chelsea Doe</h2>
+            <h2 class="text-center">About <span>Chelsea Doe</span></h2>
             <hr>
             <div class="row">
                 <div class="col-md-4">
@@ -113,16 +123,16 @@
     </section>
     <!-- EndofAlbum -->
     <!-- Galleries -->
-    <section id="galleries" class="mb-set">
+    <section id="galleries" class="mb-4">
         <div class="container">
             <h2 class="text-center">Galleries</h2>
             <hr>
             <div class="row">
                 <div class="col-md-5">
-                    <a href="https://images.unsplash.com/photo-1455503521443-c39d5b861bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                        data-lightbox="https://images.unsplash.com/photo-1455503521443-c39d5b861bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                    <a
+                        href="https://images.unsplash.com/photo-1455503521443-c39d5b861bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
                         <img src="https://images.unsplash.com/photo-1455503521443-c39d5b861bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                            alt="" class="img-thumbnail photo-1 mb-2">
+                            alt="" class="img-thumbnail photo-1 mb-2 swipebox">
                     </a>
                     <img src="https://images.unsplash.com/photo-1505058707965-09a4469a87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                         alt="" class="img-thumbnail photo-3 mb-2">
@@ -139,6 +149,81 @@
         </div>
     </section>
     <!-- EndofGalleries -->
+    <!-- Event -->
+    <section id="event">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="tour-title mt-4">Chelsea World Tour</h1>
+                        <h2 class="text-light tour-date">Event start on September 20 2020</h2>
+                        <p class="text-light">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Expedita mollitia accusantium eius dolore iste quasi eveniet beatae at
+                            consectetur cumque, itaque quis laudantium sed ipsum quisquam voluptatibus consequuntur.
+                            Quas, voluptate?. Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa alias
+                            nulla itaque provident beatae amet id consequuntur. Nostrum nam vel harum quisquam
+                            necessitatibus dolore? Beatae facere modi dicta nemo?. Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Corrupti, ipsam perspiciatis, dolor id iure exercitationem
+                            sint voluptate recusandae suscipit tempore rem quam quod sunt alias eum sed. Similique, esse
+                            ipsa?.</p>
+                        <a href="" class="btn btn-outline-light btn-lg">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2 class="text-center">Connect with <span>Chelsea Doe</span></h2>
+                <hr class="mb-4">
+                <div class="row text-center">
+                    <div class="col-md-2 col-4 mb-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-facebook icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4 mb-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-twitter icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4 mb-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-instagram icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-spotify icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-deezer icon"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <a href="" target="_blank">
+                            <i class="fab fa-youtube icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EndofEvent -->
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">Copyright &copy; 2020 Chelsea Doe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EndofFooter -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -148,7 +233,6 @@
     </script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/lightbox/js/lightbox.js"></script>
 </body>
 
 </html>
